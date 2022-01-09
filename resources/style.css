@@ -1,0 +1,38 @@
+#titulo{
+    justify-content: center;
+    text-align: center;
+    font-size: 4vw;
+}
+
+#contenedor-tabla{
+    margin-bottom: 20px;
+}
+
+#formulario{
+    /* background-color: rgba(102, 146, 228, 0.199); */
+    border: 1px rgba(102, 146, 228, 0.596) solid;
+    padding: 20px ;
+}
+
+.claseFormulario{
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+#botonEnvio{
+    font-size: 20px;
+}
+
+#transactionTable{
+    margin: 0 auto;
+}
+
+.itemTabla{
+    border: 1px solid rebeccapurple;
+    padding: 5px;
+    text-align: center;
+}
+
+#transactionCategory{
+    border: 1px rgba(102, 146, 228, 0.356) solid;
+}

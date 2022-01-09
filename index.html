@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Economia</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <h1 id="titulo">Aplicación para gestionar mi dinero</h1>
+
+    <div class="row">
+        <div id="contenedor-tabla"class="col l5 offset-l1 s12">
+            <table id="transactionTable">
+                <tr> <!-- fila de la tabla -->
+                    <th class="itemTabla"><!-- (table head, celda de la cabecera(fila) de la tabla -->
+                        Tipo
+                    </th>
+                    <th class="itemTabla">
+                        Cantidad
+                    </th>
+                    <th class="itemTabla">
+                        Descripcion
+                    </th>
+                    <th class="itemTabla">
+                        Categoria
+                    </th>
+                    <th class="itemTabla">
+                        Eliminar
+                    </th>
+                </tr>
+                    
+                <!--<tr>
+                        <td class="itemTabla">Ingreso</td>
+                        <td class="itemTabla">1000</td>
+                        <td class="itemTabla">Sueldo</td>
+                        <td class="itemTabla">Trabajo</td>
+                    </tr> -->
+                
+            </table>
+        </div>
+
+        <div class="col l5 s12">
+            <div class="col s8 offset-s2">
+                <form id="formulario">
+                    <div class="claseFormulario">
+                        <p>
+                            <span>Transacción</span>
+                            <label>
+                                <i class="material-icons">add</i>
+                                <input value="Ingreso" class="with-gap" name="transactionType" type="radio"/>
+                                <span>Ingreso</span>
+                            </label>
+                            <label>
+                                <i class="material-icons">indeterminate_check_box</i>
+                                <input value="Gasto" class="with-gap" name="transactionType" type="radio"  />
+                                <span>Gasto</span>
+                            </label>
+                        </p>
+    <!--                     <input id="ingreso" type="radio" name="transactionType" value="Ingreso">
+                        <label for="ingreso">Ingreso</label>
+                        <input id="gasto" type="radio" name="transactionType" value="Gasto">
+                        <label for="gasto">Gasto</label> -->
+                    </div>
+                    
+                    <div class="claseFormulario input-field">
+                        <label for="transactionAmount">Cantidad</label>
+                        <input class="validate" id="transactionAmount" type="number" name="transactionAmount" type="number">
+                    </div>
+
+                    <div class="claseFormulario input-field">
+                        <label for="transactionDescription">Descripcion</label>
+                        <input class="validate" type="text" id="transactionDescription" name="transactionDescription">
+                    </div>
+
+                    <div class="claseFormulario">
+                        <label for="transactionCategory">Categoria</label>
+                        <select class="browser-default" id="transactionCategory" name="transactionCategory">
+                            <!-- <option value="" disabled selected>Elige una opción</option> -->
+                        </select>
+                    </div>
+                    <br>
+                    <div class="claseFormulario">
+                        <!-- <button id="botonEnvio">Añadir</button> -->
+                        <button class="btn waves-effect waves-light" type="submit" name="action">
+                            Añadir
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="resources/main.js"></script>
+</body>
+</html>
