@@ -27,7 +27,7 @@ function drawCategories(){
 }
 
 function insertCategory(categoryName){
-    const selectElement = document.getElementById("transactionCategory");
+    let selectElement = document.getElementById("transactionCategory");
     let htmlToInsert = `<option value="${categoryName}">${categoryName}</option>`;
     selectElement.insertAdjacentHTML("beforeend", htmlToInsert);    //inserta codigo html al final del elemento seleccionado
 }
