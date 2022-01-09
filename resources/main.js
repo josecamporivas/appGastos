@@ -10,7 +10,7 @@ form.addEventListener("submit", function(event){
 });
 
 document.addEventListener("DOMContentLoaded", function(event){      //se activa una vez se cargue el HTML y antes de los recursos (CSS y todo eso)
-    let transactionObjArray = JSON.parse(localStorage.getItem("transactionData"));
+    let transactionObjArray = JSON.parse(localStorage.getItem("transactionData")) || [];
     transactionObjArray.forEach(function(element){
         insertRowTable(element)
     });
